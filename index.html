@@ -146,6 +146,38 @@
         </div>
       </section>
 
+      <section class="shuttle-section" aria-labelledby="shuttle-title">
+        <div class="container shuttle-panel reveal">
+          <div class="shuttle-content">
+            <p class="eyebrow">SHUTTLE SERVICE</p>
+            <h2 id="shuttle-title">Comfortable transport for every journey.</h2>
+            <p>Reliable shuttle transfers for airport pickups, hotel routes, group travel and seamless connections across South Africa.</p>
+            <a class="button button-primary" href="#contact">Book a Shuttle</a>
+          </div>
+        </div>
+        <div class="container shuttle-booking-wrap reveal">
+          <form class="shuttle-booking-form" id="shuttle-booking-form">
+            <div class="shuttle-booking-heading">
+              <h2>Malala-Tau Shuttle Booking</h2>
+              <p>Reliable — Elegant — Professional</p>
+            </div>
+            <div class="shuttle-form-grid">
+              <label>First name<input name="firstName" type="text" autocomplete="given-name" placeholder="First name" required /></label>
+              <label>Surname<input name="surname" type="text" autocomplete="family-name" placeholder="Surname" required /></label>
+              <label>Email address<input name="email" type="email" autocomplete="email" placeholder="Email address" required /></label>
+              <label>Phone number<input name="phone" type="tel" autocomplete="tel" placeholder="Phone number" required /></label>
+              <label class="shuttle-form-wide"><input name="pickup" type="text" placeholder="Pickup address (start typing...)" required /></label>
+              <label class="shuttle-form-wide"><input name="dropoff" type="text" placeholder="Drop-off address (start typing...)" required /></label>
+              <label class="shuttle-form-wide"><select name="vehicle" id="shuttle-vehicle" required><option value="">Select vehicle type</option><option value="2-Seater — R12/km" data-rate="12">2-Seater — R12/km</option><option value="4-Seater — R20/km" data-rate="20">4-Seater — R20/km</option><option value="6–7 Seater — R25/km" data-rate="25">6–7 Seater — R25/km</option><option value="7–12 Seater — R30/km" data-rate="30">7–12 Seater — R30/km</option></select></label>
+              <label class="shuttle-form-wide"><textarea name="notes" rows="3" placeholder="Additional notes (optional)"></textarea></label>
+            </div>
+            <p class="shuttle-estimate"><strong>Estimated Price: </strong><span id="shuttle-estimate">Enter addresses &amp; select vehicle</span></p>
+            <p class="shuttle-calculation">Calculation: Driving distance × vehicle rate; rounded to nearest R50.</p>
+            <button class="shuttle-submit" type="submit">Send booking request</button>
+          </form>
+        </div>
+      </section>
+
       <section id="experiences" class="tour-section">
         <div class="container">
           <div class="section-heading reveal section-heading-inline">

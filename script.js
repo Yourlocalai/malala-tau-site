@@ -9,6 +9,9 @@ const experienceLinks = document.querySelectorAll('.experience-link');
 const bookingForm = document.querySelector('#booking-form');
 const contactForm = document.querySelector('#contact-form');
 const registrationForm = document.querySelector('#registration-form');
+const shuttleBookingForm = document.querySelector('#shuttle-booking-form');
+const shuttleVehicle = document.querySelector('#shuttle-vehicle');
+const shuttleEstimate = document.querySelector('#shuttle-estimate');
 const heroSlides = document.querySelectorAll('.hero-slide');
 const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
 const sectionLinks = [...document.querySelectorAll('.main-nav a[href^="#"]')];
@@ -189,6 +192,30 @@ registrationForm?.addEventListener('submit', (event) => {
   window.location.href = `mailto:info@malala-tau.co.za?subject=${encodeURIComponent(`Academy registration: ${formData.get('programme') || 'New registration'}`)}&body=${encodeURIComponent(message)}`;
 });
 
+shuttleVehicle?.addEventListener('change', () => {
+  shuttleEstimate.textContent = shuttleVehicle.value ? 'Enter addresses to confirm your quote' : 'Enter addresses & select vehicle';
+});
+
+shuttleBookingForm?.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const formData = new FormData(shuttleBookingForm);
+  const message = [
+    `First name: ${formData.get('firstName') || ''}`,
+    `Surname: ${formData.get('surname') || ''}`,
+    `Email address: ${formData.get('email') || ''}`,
+    `Phone number: ${formData.get('phone') || ''}`,
+    `Pickup address: ${formData.get('pickup') || ''}`,
+    `Drop-off address: ${formData.get('dropoff') || ''}`,
+    `Vehicle type: ${formData.get('vehicle') || ''}`,
+    '',
+    'Additional notes:',
+    formData.get('notes') || '',
+  ].join('\n');
+
+  window.location.href = `mailto:info@malala-tau.co.za?subject=${encodeURIComponent('Shuttle booking request')}&body=${encodeURIComponent(message)}`;
+});
+
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -340,7 +367,7 @@ sortSelect?.addEventListener('change', () => {
 
 const forms = document.querySelectorAll('form');
 forms.forEach((form) => {
-  if (form === bookingForm || form === contactForm || form === registrationForm) return;
+  if (form === bookingForm || form === contactForm || form === registrationForm || form === shuttleBookingForm) return;
   form.addEventListener('submit', (event) => {
     event.preventDefault();
   });
