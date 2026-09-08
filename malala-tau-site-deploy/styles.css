@@ -170,9 +170,7 @@ p {
 .brand-label {
   display: block;
   color: var(--white);
-  font-family: "Cormorant Garamond", serif;
   font-size: 0.95rem;
-  font-weight: 600;
   letter-spacing: 0.08em;
   line-height: 1.15;
   white-space: nowrap;
@@ -182,7 +180,6 @@ p {
   display: block;
   margin-top: 4px;
   color: var(--gold);
-  font-family: "Inter", sans-serif;
   font-size: 0.66rem;
   letter-spacing: 0.16em;
 }
@@ -559,10 +556,6 @@ section {
   height: 100%;
   object-fit: cover;
   transition: transform 0.2s linear;
-}
-
-.feature-card-lion img {
-  object-position: left center;
 }
 
 .feature-card:hover img {
@@ -1947,12 +1940,6 @@ section {
   }
 }
 
-@media (max-width: 1100px) {
-  .safari-layout {
-    grid-template-columns: 1fr;
-  }
-}
-
 @media (max-width: 640px) {
   .brand-logo {
     width: 58px;
@@ -2016,15 +2003,6 @@ section {
 
   .registration-fields {
     grid-template-columns: 1fr;
-  }
-
-  .safari-visual {
-    min-height: 0;
-    grid-template-columns: 1fr;
-  }
-
-  .safari-image {
-    height: 280px;
   }
 
   .contact-form-grid {
