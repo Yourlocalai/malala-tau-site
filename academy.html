@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academy | Malala-Tau</title>
+    <meta name="description" content="Malala-Tau Academy programmes for guides, tourism professionals and community development." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="academy-page">
+    <header class="site-header" id="top">
+      <div class="container nav-shell">
+        <a href="index.html#top" class="brand" aria-label="Malala Tau home">
+          <img class="brand-logo" src="malala-tau-logo.png" alt="Malala-Tau Tours and Safaris" />
+          <span class="brand-label">Malala-Tau<br /><small>Tours &amp; Safaris</small></span>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html#top">Home</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#experiences">Experiences</a>
+          <a href="index.html#destinations">Destinations</a>
+          <a href="index.html#safari">Safaris</a>
+          <a class="is-active" href="academy.html#academy">Academy</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+        <a class="nav-cta" href="#registration">Plan Your Journey</a>
+        <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section id="academy" class="academy-programmes-section">
+        <div class="container academy-page-heading reveal">
+          <p class="eyebrow eyebrow-dark">OUR PROGRAMMES</p>
+          <h1>What You Can Study</h1>
+          <p>From your first qualification as a guide through to specialist and community development programmes.</p>
+        </div>
+        <div class="container programme-grid reveal">
+          <article class="programme-card"><div class="programme-meta"><span>Flagship</span><span>Field-based</span></div><h2>Tourist Guide Training</h2><p>The core guiding qualification: interpretation, group management, route knowledge, safety, first aid principles and professional conduct, assessed in the field.</p><a href="#registration">Enrol</a></article>
+          <article class="programme-card"><div class="programme-meta"><span>Front line</span><span>Classroom</span></div><h2>Tourist Information Officer</h2><p>Destination knowledge, visitor servicing, booking systems, complaint handling and the communication skills that make a visitor centre work.</p><a href="#registration">Enrol</a></article>
+          <article class="programme-card"><div class="programme-meta"><span>Specialist</span><span>Field-based</span></div><h2>Culture &amp; Wildlife Training</h2><p>Deep-dive interpretation of South African wildlife, ecology and cultural heritage: the specialist layer that turns a guide into a storyteller.</p><a href="#registration">Enrol</a></article>
+          <article class="programme-card"><div class="programme-meta"><span>Community</span><span>Blended</span></div><h2>Community Tourism Development</h2><p>For communities building their own tourism offering: product development, pricing, hosting standards, partnerships and market access.</p><a href="#registration">Enrol</a></article>
+          <article class="programme-card"><div class="programme-meta"><span>Short course</span><span>1–5 days</span></div><h2>Short Courses &amp; Skills Programmes</h2><p>Focused upskilling for people already working: customer service, route briefings, group safety, storytelling and destination refreshers.</p><a href="#registration">Enrol</a></article>
+          <article class="programme-card"><div class="programme-meta"><span>Compliance</span><span>2 days</span></div><h2>First Aid &amp; Safety for Guides</h2><p>Practical emergency response for guides operating in remote areas: incident management, evacuation planning and passenger safety.</p><a href="#registration">Enrol</a></article>
+        </div>
+      </section>
+
+      <section class="academy-process-section">
+        <div class="container academy-page-heading academy-dark-heading reveal">
+          <p class="eyebrow">FROM REGISTRATION TO CERTIFICATE</p>
+          <h2>How Your Training Runs</h2>
+        </div>
+        <div class="container process-grid reveal">
+          <article class="process-step"><span>1</span><div><h3>Register online</h3><p>Complete the form below. You receive a reference number immediately.</p></div></article>
+          <article class="process-step"><span>2</span><div><h3>We confirm</h3><p>The academy confirms your place, intake dates and fees within two working days.</p></div></article>
+          <article class="process-step"><span>3</span><div><h3>Train &amp; assess</h3><p>Classroom modules plus practical field assessment with a working guide.</p></div></article>
+          <article class="process-step"><span>4</span><div><h3>Get certified</h3><p>Your certificate is issued with a unique number that any employer can verify online.</p></div></article>
+        </div>
+      </section>
+
+      <section id="registration" class="academy-registration-section">
+        <div class="container registration-layout reveal">
+          <form class="registration-form" id="registration-form">
+            <div class="registration-fields">
+              <label>First name *<input name="firstName" type="text" autocomplete="given-name" required /></label>
+              <label>Surname *<input name="surname" type="text" autocomplete="family-name" required /></label>
+              <label>Email address *<input name="email" type="email" autocomplete="email" required /></label>
+              <label>Mobile number *<input name="mobile" type="tel" placeholder="082 000 0000" required /></label>
+              <label>ID / passport number<input name="identity" type="text" /></label>
+              <label>Town / city<input name="city" type="text" placeholder="Johannesburg" /></label>
+              <label class="registration-wide">Programme *<select name="programme" required><option value="">Choose a programme...</option><option>Tourist Guide Training</option><option>Tourist Information Officer</option><option>Culture &amp; Wildlife Training</option><option>Community Tourism Development</option><option>Short Courses &amp; Skills Programmes</option><option>First Aid &amp; Safety for Guides</option></select></label>
+              <label>Preferred intake<select name="intake"><option>Next available</option><option>Within 1 month</option><option>Within 3 months</option><option>Later this year</option></select></label>
+              <label>Study mode<select name="studyMode"><option>Full time</option><option>Part time</option><option>Weekends</option><option>Block release</option></select></label>
+              <label class="registration-wide">Anything we should know?<textarea name="notes" rows="4" placeholder="Previous experience, employer sponsorship, accessibility requirements..."></textarea></label>
+            </div>
+            <button class="button button-primary" type="submit">Submit My Registration</button>
+          </form>
+          <aside class="registration-next">
+            <h2>What Happens Next</h2>
+            <dl><div><dt>Instant</dt><dd>Reference number</dd></div><div><dt>Within 2 days</dt><dd>Place confirmed</dd></div><div><dt>On confirmation</dt><dd>Intake dates &amp; fees</dd></div><div><dt>On completion</dt><dd>Verifiable certificate</dd></div></dl>
+            <p>Prefer to talk it through first? Call the academy on <a href="tel:+27829653034">+27 82 965 3034</a> or <a href="https://wa.me/27829653034" target="_blank" rel="noopener noreferrer">WhatsApp us</a>.</p>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div><a href="index.html#top" class="brand footer-brand" aria-label="Malala Tau home"><img class="footer-logo" src="malala-tau-logo.png" alt="Malala-Tau Tours and Safaris" /></a><p>Your journey starts here.</p></div>
+        <div><h3>Navigation</h3><ul><li><a href="index.html#experiences">Experiences</a></li><li><a href="index.html#destinations">Destinations</a></li><li><a href="index.html#about">About</a></li><li><a href="index.html#contact">Contact</a></li></ul></div>
+        <div><h3>Newsletter</h3><form class="newsletter-form"><input type="email" aria-label="Newsletter email" placeholder="Email address" /><button type="submit">Join</button></form></div>
+        <div class="footer-hours"><h3>Office Hours</h3><dl><div><dt>Monday – Friday</dt><dd>08:00 – 17:00</dd></div><div><dt>Saturday</dt><dd>08:00 – 13:00</dd></div><div><dt>Sunday</dt><dd>Tours operate daily</dd></div></dl><p>Tours and transfers run seven days a week, including public holidays. Office hours apply to new enquiries only.</p></div>
+      </div>
+      <div class="container footer-bottom"><div class="footer-office-contact"><span>Office Address: 20 Forbes Street, Soweto 1852</span><a href="tel:+27829653034">+27 82 965 3034</a><a href="mailto:info@malala-tau.co.za">Email: info@malala-tau.co.za</a></div><span>© 2026 Malala-Tau. All rights reserved.</span><span><a href="#">Privacy</a><a href="#">Terms</a></span></div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
